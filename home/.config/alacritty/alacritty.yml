@@ -1,0 +1,15 @@
+font:
+  size: 15
+  normal:
+    style: Regular
+    family: JetBrainsMono Nerd Font Mono
+  bold:
+    style: Bold
+    family: JetBrainsMono Nerd Font Mono
+  italic:
+    style: Italic
+    family: JetBrainsMono Nerd Font Mono
+env:
+  TERM: xterm-256color
+shell:
+  program: /usr/bin/zsh
