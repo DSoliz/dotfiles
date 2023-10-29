@@ -1,9 +1,11 @@
-theme = "dark_plus"
+# theme = "dark_plus"
+theme = "dark_plus_and_status"
 
 [editor]
 line-number = "relative"
 mouse = true
 bufferline = "always"
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"

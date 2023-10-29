@@ -1,0 +1,5 @@
+inherits = "dark_plus"
+
+"ui.statusline.insert" = { fg = "white", bg = "green" }
+"ui.statusline.select" = { fg = "white", bg = "yellow" }
+
