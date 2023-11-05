@@ -9,7 +9,9 @@ font:
   italic:
     style: Italic
     family: JetBrainsMono Nerd Font Mono
+
 env:
   TERM: xterm-256color
+
 shell:
   program: /usr/bin/zsh
