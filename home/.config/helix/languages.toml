@@ -21,7 +21,7 @@ codeAction = { disableRuleComment = { enable = true, location = "separateLine" }
 codeActionOnSave = { enable = true, mode = "all" }
 experimental = { }
 problems = { shortenToSingleLine = false }
-workingDirectory = { mode = "location" }
+# workingDirectory = { mode = "location" }
 # workingDirectories = [{ directory = "front", changeProcessCWD = true }, { directory = "server", changeProcessCWD = true }]
 
 [[language]]
@@ -31,8 +31,20 @@ language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   "eslint"
 ]
-# roots = [
-#   "package-lock.json",
-#   "tsconfig.json",
-# ]
+roots = [
+  # "package-lock.json",
+  "package.json",
+]
+
+[[language]]
+name = "javascript"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "eslint"
+]
+roots = [
+  # "package-lock.json",
+  "package.json",
+]
 
