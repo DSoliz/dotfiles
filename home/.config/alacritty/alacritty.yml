@@ -10,8 +10,16 @@ font:
     style: Italic
     family: JetBrainsMono Nerd Font Mono
 
-env:
-  TERM: xterm-256color
+# window:
+#   # Make `Option` key behave as `Alt` (macOS only):
+#   #   - OnlyLeft
+#   #   - OnlyRight
+#   #   - Both
+#   #   - None (default)
+#   option_as_alt: Both
+    
+# env:
+# TERM: xterm-256color
 
 shell:
   program: /usr/bin/zsh
