@@ -10,6 +10,7 @@ keybinds {
         bind "Alt L" "Alt Right" { MoveFocusOrTab "Right"; }
         bind "Alt J" "Alt Down" { MoveFocus "Down"; }
         bind "Alt K" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt E" { EditScrollback; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
