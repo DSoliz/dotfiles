@@ -6,11 +6,10 @@ keybinds {
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
-        bind "Alt H" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt L" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt J" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt K" "Alt Up" { MoveFocus "Up"; }
-        bind "Alt E" { EditScrollback; }
+        bind "Ctrl Left" { MoveFocusOrTab "Left"; }
+        bind "Ctrl Right" { MoveFocusOrTab "Right"; }
+        bind "Ctrl Down" { MoveFocus "Down"; }
+        bind "Ctrl Up" { MoveFocus "Up"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
