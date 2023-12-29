@@ -6,10 +6,10 @@ keybinds {
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
-        bind "Ctrl Left" { MoveFocusOrTab "Left"; }
-        bind "Ctrl Right" { MoveFocusOrTab "Right"; }
-        bind "Ctrl Down" { MoveFocus "Down"; }
-        bind "Ctrl Up" { MoveFocus "Up"; }
+        bind "Ctrl H" { MoveFocusOrTab "Left"; }
+        bind "Ctrl L" { MoveFocusOrTab "Right"; }
+        bind "Ctrl J" { MoveFocus "Down"; }
+        bind "Ctrl K" { MoveFocus "Up"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
