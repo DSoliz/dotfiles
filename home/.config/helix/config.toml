@@ -7,6 +7,7 @@ mouse = false
 bufferline = "always"
 color-modes = true
 lsp.display-inlay-hints = false
+popup-border = "all"
 
 [editor.cursor-shape]
 insert = "bar"
