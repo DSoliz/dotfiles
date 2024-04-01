@@ -10,6 +10,8 @@
 "constructor" = { fg = "type" }
 "diagnostic" = { underline = { color = "gold", style = "curl" } }
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 "diff.delta" = { fg = "blue4" }
 "diff.minus" = { fg = "orange_red" }
 "diff.plus" = { fg = "dark_green2" }
@@ -70,6 +72,7 @@
 "ui.virtual.inlay-hint" = { fg = "dark_gray5"}
 "ui.virtual.ruler" = { bg = "borders" }
 "ui.virtual.whitespace" = { fg = "dark_gray" }
+"ui.virtual.jump-label" = { fg = "black", bg = "yellow", modifiers = ["bold"] }
 "ui.window" = { bg = "widget" }
 "variable" = { fg = "variable" }
 "variable.builtin" = { fg = "blue2" }
@@ -79,7 +82,9 @@
 
 [palette]
 white = "#ffffff"
+black = "#111111"
 orange = "#ce9178"
+yellow = "#ffff00"
 gold = "#d7ba7d"
 gold2 = "#cca700"
 pale_green = "#b5cea8"
