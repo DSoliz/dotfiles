@@ -65,7 +65,7 @@
 "ui.statusline" = { fg = "white", bg = "blue" }
 "ui.statusline.inactive" = { fg = "white", bg = "blue" }
 "ui.statusline.insert" = { fg = "white", bg = "green" }
-"ui.statusline.select" = { fg = "white", bg = "yellow" }
+"ui.statusline.select" = { fg = "white", bg = "gold2" }
 "ui.text" = { fg = "text" }
 "ui.text.focus" = { fg = "white" }
 "ui.virtual.indent-guide" = { fg = "dark_gray4" }
