@@ -38,3 +38,6 @@ Y = "yank_to_clipboard"
 [keys.select]
 Y = "yank_to_clipboard"
 
+[keys.normal.g]
+k = "goto_prev_change"
+j = "goto_next_change"
