@@ -3,8 +3,8 @@
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "soligo";
-  home.homeDirectory = "/home/soligo";
+  home.username = "manjaro";
+  home.homeDirectory = "/home/manjaro";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -49,6 +49,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    ".config/helix".source = dotfiles/helix;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
@@ -85,7 +86,8 @@
     plugins = [
       "z"
       "history"
+      "git"
     ];
-    theme = "agnoster";
+    theme = "miloshadzic";
   };
 }
