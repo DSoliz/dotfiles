@@ -17,3 +17,15 @@ gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys false
 # make capslock behave as escape
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
 
+# add alacritty terminal info so that undercurls can be rendered in helix
+# https://github.com/alacritty/alacritty/issues/2838#issuecomment-1032517876
+wget https://raw.githubusercontent.com/alacritty/alacritty/master/extra/alacritty.info && tic -xe alacritty,alacritty-direct alacritty.info && rm alacritty.info
+
+# pin to 4.8.0 since above is broken for helix
+npm i -g vscode-langservers-extracted@4.8.0
+
+# asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+asdf global nodejs latest:20
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+

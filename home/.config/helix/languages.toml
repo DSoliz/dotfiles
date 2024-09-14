@@ -1,26 +1,45 @@
+[language-server.marksman]
+command = "marksman"
+args = ["--stdio"]
+
+[[language]]
+name = "markdown"
+language-servers = [
+  "marksman",
+  # "cspell"
+]
+
+# [language-server.cspell]
+# command = "cspell-lsp"
+# args = ["--stdio"]
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
+
 [language-server.typescript-language-server]
 command = "typescript-language-server"
 args = ["--stdio"]
 config.hostInfo = "helix"
 
 [language-server.eslint]
-args = ["--stdio"]
 command = "vscode-eslint-language-server"
+args = ["--stdio"]
 
 [language-server.eslint.config]
-format = true
-nodePath = ""
+# format = true # opt
+nodePath = "" # required
 onIgnoredFiles = "off"
-packageManager = "npm"
-quiet = false
-rulesCustomizations = []
-run = "onType"
-useESLintClass = false
-validate = "on"
-codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } }
-codeActionOnSave = { enable = true, mode = "all" }
-experimental = { }
-problems = { shortenToSingleLine = false }
+# packageManager = "pnpm" # opt
+# quiet = false # opt
+rulesCustomizations = [] # required
+run = "onSave" # "onType" required
+# useESLintClass = false
+validate = "on" # required
+codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } } # required for code actions
+# codeActionOnSave = { enable = true, mode = "all" }
+experimental = { } # required
+problems = { shortenToSingleLine = false } # required
 # workingDirectory = { mode = "location" }
 # workingDirectories = [{ directory = "front", changeProcessCWD = true }, { directory = "server", changeProcessCWD = true }]
 
@@ -32,8 +51,22 @@ language-servers = [
   "eslint"
 ]
 roots = [
+  "pnpm-lock.yaml"
   # "package-lock.json",
-  "package.json",
+  # "package.json",
+]
+
+[[language]]
+name = "tsx"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "eslint"
+]
+roots = [
+  "pnpm-lock.yaml"
+  # "package-lock.json",
+  # "package.json",
 ]
 
 [[language]]
