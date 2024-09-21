@@ -13,5 +13,15 @@ style = "Italic"
 family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
+[window]
+# option_as_alt = "Both" # MacOs
+opacity = 0.90
+# decorations = "None"
+dynamic_padding = true
+padding = { x = 12, y = 12 }
+
+[colors]
+transparent_background_colors = true
+
 [shell]
-program = "/usr/bin/zsh"
+program = "zsh"

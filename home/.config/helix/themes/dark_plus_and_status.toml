@@ -46,7 +46,8 @@
 "type" = { fg = "type" }
 "type.builtin" = { fg = "type" }
 "type.enum.variant" = { fg = "constant" }
-"ui.background" = { fg = "light_gray", bg = "dark_gray2" }
+"ui.background" = { fg = "light_gray" }
+# "ui.background" = { fg = "light_gray", bg = "dark_gray2" }
 "ui.bufferline" = { fg = "text", bg = "widget" }
 "ui.bufferline.active" = { fg = "white", bg = "blue" }
 "ui.bufferline.background" = { bg = "background" }
