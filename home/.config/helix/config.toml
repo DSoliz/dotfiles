@@ -1,5 +1,6 @@
 # theme = "dark_plus"
-theme = "dark_plus_and_status"
+# theme = "dark_plus_and_status"
+theme = "dracula"
 
 [editor]
 line-number = "relative"
