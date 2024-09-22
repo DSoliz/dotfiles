@@ -1,4 +1,2 @@
-# cp -r ./home/.config ~/.config
-# cp -r ./home/.local ~/.local
-# cp ./home/.zshrc ~/.zshrc
+# IMPORTANT: for this to work the repo must be cloned to ~/repos/dotfiles
 cp -rsf ~/repos/dotfiles/home/. ~
