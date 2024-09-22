@@ -27,13 +27,14 @@ command = "vscode-eslint-language-server"
 args = ["--stdio"]
 
 [language-server.eslint.config]
-# format = true # opt
+format = true # opt
 nodePath = "" # required
 onIgnoredFiles = "off"
 # packageManager = "pnpm" # opt
 # quiet = false # opt
 rulesCustomizations = [] # required
-run = "onSave" # "onType" required
+# run = "onType" # "onType" required
+# run = "onSave" # "onType" required
 # useESLintClass = false
 validate = "on" # required
 codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } } # required for code actions
@@ -46,6 +47,7 @@ problems = { shortenToSingleLine = false } # required
 [[language]]
 name = "typescript"
 auto-format = true
+formatter = { command = './node_modules/prettier/bin/prettier.cjs', args = ["--parser", "typescript"] }
 language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   "eslint"
