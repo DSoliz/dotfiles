@@ -1,7 +1,9 @@
 sudo apt install git
 sudo apt install alacritty
-
+sudo apt install curl
+sudo apt install zsh
 snap install helix --classic
+
 git config --global core.editor hx
 git config --global init.defaultBranch main
 git config --global user.email "zilosgodi@gmail.com"
@@ -9,7 +11,7 @@ git config --global user.name "Diego Soliz"
 
 sudo snap install zellij --classic
 
-sudo apt install zsh
+# oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # disable dock hotkeys
@@ -29,3 +31,5 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
 asdf global nodejs latest:20
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
+# in case shell is not matching/displaying/auto-completing hidden filed
+set match-hidden-files off
